@@ -1,12 +1,17 @@
 provider "aws" {
-  access_key = "AKIAQHQI3M75EF6ONZ5N"
-  secret_key = "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"
+  access_key = "AKIAQHQI3M75CVJBJH6E"
+  secret_key = "tCE3Zj606HJEWdPdXfdLDFnjKVhBnumC6xzHHp3x"
   region     = "us-east-1"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-07d0cf3af28718ef8"
-  instance_type = "t2.micro"
+resource "aws_s3_bucket" "b1" {
+  bucket = "august132020bucket"
+  acl    = "private"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
 }
 
 
