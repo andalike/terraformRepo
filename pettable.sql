@@ -46,7 +46,7 @@ CREATE TABLE `pet` (
 
 LOCK TABLES `pet` WRITE;
 /*!40000 ALTER TABLE `pet` DISABLE KEYS */;
-INSERT INTO `pet` VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL),('Tommy','Owner1','lab','f','1999-03-30',NULL),('Bruno','Owner2','atl','f','1999-03-30',NULL),('tuffy','Owner2','atl','f','1999-03-30',NULL),('dog','Owner2','human','f','1999-03-30',NULL);
+INSERT INTO `pet` VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL),('Tommy','Owner1','lab','f','1999-03-30',NULL),('Bruno','Owner2','atl','f','1999-03-30',NULL),('tuffy','Owner2','atl','f','1999-03-30',NULL),('dog','Owner2','human','f','1999-03-30',NULL),('See This?','Yes i Do','Thank you','f','1999-03-30',NULL);
 /*!40000 ALTER TABLE `pet` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -372,7 +372,7 @@ CREATE TABLE `innodb_index_stats` (
 
 LOCK TABLES `innodb_index_stats` WRITE;
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT INTO `innodb_index_stats` VALUES ('menagerie','pet','GEN_CLUST_INDEX','2020-08-14 02:07:04','n_diff_pfx01',4,1,'DB_ROW_ID'),('menagerie','pet','GEN_CLUST_INDEX','2020-08-14 02:07:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('menagerie','pet','GEN_CLUST_INDEX','2020-08-14 02:07:04','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2020-08-14 02:02:03','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2020-08-14 02:02:03','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2020-08-14 02:02:03','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('menagerie','pet','GEN_CLUST_INDEX','2020-08-14 02:22:42','n_diff_pfx01',6,1,'DB_ROW_ID'),('menagerie','pet','GEN_CLUST_INDEX','2020-08-14 02:22:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('menagerie','pet','GEN_CLUST_INDEX','2020-08-14 02:22:42','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2020-08-14 02:02:03','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2020-08-14 02:02:03','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2020-08-14 02:02:03','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2020-08-14 02:02:03','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -400,7 +400,7 @@ CREATE TABLE `innodb_table_stats` (
 
 LOCK TABLES `innodb_table_stats` WRITE;
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT INTO `innodb_table_stats` VALUES ('menagerie','pet','2020-08-14 02:07:04',4,1,0),('mysql','gtid_executed','2020-08-14 02:02:03',0,1,0),('sys','sys_config','2020-08-14 02:02:03',6,1,0);
+INSERT INTO `innodb_table_stats` VALUES ('menagerie','pet','2020-08-14 02:22:42',6,1,0),('mysql','gtid_executed','2020-08-14 02:02:03',0,1,0),('sys','sys_config','2020-08-14 02:02:03',6,1,0);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -971,4 +971,4 @@ CREATE TABLE IF NOT EXISTS `slow_log` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-14  2:10:13
+-- Dump completed on 2020-08-14  2:23:07
