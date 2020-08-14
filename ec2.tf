@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "b1" {
-  bucket = "august132020bucket"
+  bucket = "august142020bucket"
   acl    = "private"
 
   tags = {
